@@ -1,0 +1,5 @@
+{
+    "require": {
+        "hermawan/codeigniter4-datatables": "^0.7.2"
+    }
+}
