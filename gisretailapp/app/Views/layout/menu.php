@@ -7,7 +7,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
+          <a href="/" class="text-nowrap logo-img">
             <img src="../assets/images/logos/logo-home.svg" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -41,14 +41,14 @@
                 <span class="hide-menu">Retail</span>
               </a>
             </li>
-            <li class="sidebar-item">
+            <!-- <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-check"></i>
                 </span>
                 <span class="hide-menu">Pemegang Izin Retail</span>
               </a>
-            </li>
+            </li> -->
           </ul>
           
         </nav>

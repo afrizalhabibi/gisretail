@@ -11,9 +11,32 @@ class RetailModel extends Model {
 
     public function getretaildata() {
         $result = $this->db->table('retail')
+        ->join('kecamatan', 'kecamatan.id_kec = retail.id_kec')
         ->get();
 
         return $result;
+    }
+    public function getStatus() {
+        $result = $this->db->table('retail')
+        ->groupBy('status')
+        ->get();
+
+        return $result;
+    }
+
+    public function getkecdata() {
+        $result = $this->db->table('kecamatan')
+        ->get();
+
+        return $result;
+    }
+    
+    public function getretailbyid($id) {
+        $result = $this->db->table('retail')
+        ->where('id_retail', $id)
+        ->get();
+
+        return $result->getRow();
     }
 }
 ?>

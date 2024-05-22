@@ -10,8 +10,7 @@ class Home extends BaseController
     public function index()
     {
         $RetailModel = new RetailModel();
-        $data['retaildata'] = $RetailModel->getretaildata()->getResultArray();
-        // d($data);
+        $data['retaildata'] = $RetailModel->getretaildata()->getResult();
         return view('home', $data);
     }
 }
