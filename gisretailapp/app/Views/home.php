@@ -12,15 +12,20 @@
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
 
-                var markers = L.markerClusterGroup();
+                var market = L.marker([-3.803082642100828, 114.76865359992058]).addTo(map);
+                market.bindPopup("<b>Pasar 'Tapandang Berseri' Pelaihari</b>");
+
+                // var markers = L.markerClusterGroup();
 
                 <?php foreach ($retaildata as $retail): ?>
                   var marker = L.marker([<?= $retail->latitude ?>, <?= $retail->longitude ?>]);
                                marker.bindPopup("<b><?= $retail->nama_retail ?></b><br><?= $retail->alamat ?>");
-                      markers.addLayer(marker);
+                  map.addLayer(marker);
+
+                      // markers.addLayer(marker);
                   <?php endforeach; ?>
 
-                  map.addLayer(markers);
+                  // map.addLayer(markers);
 
 
                 // Calculate distance between two latlng points in meters
@@ -53,7 +58,7 @@
                             
                             // Create a marker with the custom icon at the midpoint between the two markers
                             var midPoint = L.latLngBounds([markerLatLng, otherMarkerLatLng]).getCenter();
-                            if (distance < 100) {
+                            if (distance < 300) {
                               var distanceMarker = L.marker(midPoint, { icon: customIcon }).addTo(map);
                               // Draw a polyline between the two markers
                               var polyline = L.polyline([markerLatLng, otherMarkerLatLng], { color: '#E94646' }).addTo(map);
