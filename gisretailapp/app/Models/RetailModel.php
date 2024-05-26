@@ -16,6 +16,14 @@ class RetailModel extends Model {
 
         return $result;
     }
+    public function getretaildatakec($id_kec) {
+        $result = $this->db->table('retail')
+        ->join('kecamatan', 'kecamatan.id_kec = retail.id_kec')
+        ->where('retail.id_kec', $id_kec)
+        ->get();
+
+        return $result;
+    }
     public function getStatus() {
         $result = $this->db->table('retail')
         ->groupBy('status')

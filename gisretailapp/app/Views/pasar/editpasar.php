@@ -65,7 +65,7 @@
                                 if (marker) {
                                     map.removeLayer(marker);
                                 }
-                                marker = L.marker(e.latlng).addTo(map);
+                                marker = L.marker(e.latlng, {icon : marketcustom}).addTo(map);
                                 document.getElementById('lat').value = e.latlng.lat;
                                 document.getElementById('long').value = e.latlng.lng; 
                             });

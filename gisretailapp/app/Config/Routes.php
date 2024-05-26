@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+$routes->post('/retaildatafilter', 'Home::retaildatafilter');
 $routes->get('/id', 'Retail::cleannumber');
 $routes->get('/ajax-showretail', 'Retail::showretail');
 $routes->get('/retail', 'Retail::index');
