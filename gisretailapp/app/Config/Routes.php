@@ -14,3 +14,17 @@ $routes->get('/detailretail/(:any)', 'Retail::retailDetails/$1');
 $routes->post('/doaddretail', 'Retail::doaddretail');
 $routes->post('/doeditretail', 'Retail::doeditretail');
 $routes->post('/dodeleteretail', 'Retail::dodeleteretail');
+
+//Pasar
+$routes->get('/pasar', 'Pasar::index');
+$routes->get('/ajax-pasar', 'Pasar::showpasar');
+$routes->get('/addpasar', 'Pasar::addpasar');
+$routes->post('/doaddpasar', 'Pasar::doaddpasar');
+$routes->get('/detailpasar/(:any)', 'Pasar::pasarDetails/$1');
+$routes->post('/doeditpasar', 'Pasar::doeditpasar');
+$routes->post('/dodeletepasar', 'Pasar::dodeletepasar');
+
+//map
+$routes->get('/retailmap', 'Home::retaildata');
+$routes->get('/pasarmap', 'Home::pasardata');
+

@@ -24,7 +24,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="<?=base_url()?>" aria-expanded="false">
                 <span>
-                  <i class="ti ti-map-pin"></i>
+                  <i class="fa-solid fa-location-dot"></i>
                 </span>
                 <span class="hide-menu">Peta Lokasi</span>
               </a>
@@ -36,21 +36,20 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="/retail" aria-expanded="false">
                 <span>
-                  <i class="ti ti-building-store"></i>
+                <i class="fa-solid fa-store"></i>
                 </span>
-                <span class="hide-menu">Retail</span>
+                <span class="hide-menu">Toko Swalayan</span>
               </a>
             </li>
-            <!-- <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/pasar" aria-expanded="false">
                 <span>
-                  <i class="ti ti-user-check"></i>
+                <i class="fa-solid fa-star"></i>
                 </span>
-                <span class="hide-menu">Pemegang Izin Retail</span>
+                <span class="hide-menu">Pasar</span>
               </a>
-            </li> -->
+            </li>
           </ul>
-          
         </nav>
         <!-- End Sidebar navigation -->
       </div>
