@@ -149,6 +149,15 @@
                                     });
                                 }
 
+                                if (markerData.status === 'Belum Berizin') {
+                                    customMarkerIcon = L.ExtraMarkers.icon({
+                                        icon: 'fa-store',
+                                        markerColor: 'black',
+                                        shape: 'circle',
+                                        prefix: 'fa-solid'
+                                    });
+                                }
+
                                 var marker = L.marker([markerData.latitude, markerData.longitude], { icon: customMarkerIcon })
                                     .addTo(map)
                                     .bindPopup('<b>' + markerData.nama_retail + '</b></br>' + markerData.alamat);
@@ -239,6 +248,15 @@
                                     customMarkerIcon = L.ExtraMarkers.icon({
                                         icon: 'fa-store',
                                         markerColor: 'orange',
+                                        shape: 'circle',
+                                        prefix: 'fa-solid'
+                                    });
+                                }
+
+                                if (markerData.status === 'Belum Berizin') {
+                                    customMarkerIcon = L.ExtraMarkers.icon({
+                                        icon: 'fa-store',
+                                        markerColor: 'black',
                                         shape: 'circle',
                                         prefix: 'fa-solid'
                                     });

@@ -33,13 +33,13 @@
                                 autocomplete="off" required>
                         </div>
                         <div class="col-lg-12 form-group mb-3">
-                            <label class="form-label">Radius Jarak Pasar Dari Toko Swalayan</label>
+                            <label class="form-label">Radius jarak pasar dengan toko swalayan</label>
                             <input type="text" class="form-control py-2"  id="rad" name="rad" placeholder="Radius"
                                 autocomplete="off" pattern="[0-9]+" data-v-message="Inputkan angka" required>
                         </div>
                     </form>
                     <div class="col-lg-12 form-group mb-3">
-                    <input type="submit" id="btn-send" class="btn btn-primary w-100 mt-0"></input>
+                    <input type="submit" value="Simpan" id="btn-send" class="btn btn-primary w-100 mt-0">
                     </div>
                     </div>
                     <div class="col-lg-6">

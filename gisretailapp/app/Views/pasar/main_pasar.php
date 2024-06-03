@@ -9,7 +9,7 @@
             <h5 class="card-title fw-semibold mb-4">Data Pasar</h5>
             </div>
             <div>
-            <a href="/addpasar" class="btn btn-primary fs-2 fw-semibold lh-sm">Tambah Data</a>
+            <a href="/tambahpasar" class="btn btn-primary fs-2 fw-semibold lh-sm">Tambah Data</a>
         </div>
     </div>
     <div class="table-responsive mt-4">
