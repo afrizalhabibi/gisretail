@@ -11,6 +11,10 @@ class ComposerStaticInite69e669401af1d9c60e358e36e6bf714
         array (
             'Psr\\Log\\' => 8,
         ),
+        'M' => 
+        array (
+            'Myth\\Auth\\' => 10,
+        ),
         'L' => 
         array (
             'Laminas\\Escaper\\' => 16,
@@ -29,6 +33,10 @@ class ComposerStaticInite69e669401af1d9c60e358e36e6bf714
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Myth\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myth/auth/src',
         ),
         'Laminas\\Escaper\\' => 
         array (

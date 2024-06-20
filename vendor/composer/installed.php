@@ -1,23 +1,29 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'eafd9503b2b581eabd0e012ff3af43d3033fee65',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'eafd9503b2b581eabd0e012ff3af43d3033fee65',
             'dev_requirement' => false,
+        ),
+        'codeigniter4/authentication-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
         ),
         'codeigniter4/framework' => array(
             'pretty_version' => 'v4.4.8',
@@ -53,6 +59,15 @@
             'install_path' => __DIR__ . '/../laminas/laminas-escaper',
             'aliases' => array(),
             'reference' => 'ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490',
+            'dev_requirement' => false,
+        ),
+        'myth/auth' => array(
+            'pretty_version' => 'v1.2.1',
+            'version' => '1.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../myth/auth',
+            'aliases' => array(),
+            'reference' => '7d0347faa47bd754d2dc49593a9852800be73986',
             'dev_requirement' => false,
         ),
         'psr/log' => array(

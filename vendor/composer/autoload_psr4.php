@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Myth\\Auth\\' => array($vendorDir . '/myth/auth/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Hermawan\\DataTables\\' => array($vendorDir . '/hermawan/codeigniter4-datatables/src'),
     'CodeIgniter\\' => array($vendorDir . '/codeigniter4/framework/system'),

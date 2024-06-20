@@ -1,5 +1,6 @@
 {
     "require": {
-        "hermawan/codeigniter4-datatables": "^0.7.2"
+        "hermawan/codeigniter4-datatables": "^0.7.2",
+        "myth/auth": "^1.2"
     }
 }
